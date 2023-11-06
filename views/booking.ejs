@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/booking.css">
+</head>
+<header>
+    
+</header>
+<body>
+    <div>
+        <form action="/booking/create" method="post">
+            <label for="name">Please enter your name:</label>
+            <input type="text" name="name" id="name" placeholder="Name" required>
+            
+            <label for="date">Date:</label>
+            <input type="date" name="date" id="date" required>
+            
+            <label for="time">Time:</label>
+            <input type="time" name="time" id="time" required>
+            
+            <label for="card">Card number:</label>
+            <input type="text" name="card" id="card" pattern="[0-9]{16}" placeholder="1234 1234 1234 1234" required>
+            
+            <div class="button-container">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+    
+</body>
+<footer>
+
+</footer>
+</html>

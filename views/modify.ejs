@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+</head>
+<body>
+    
+    <h1>All Bookings</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Card Number</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% bookings.forEach(function(booking) { %>
+            <tr>
+                <td><%= booking.name %></td>
+                <td><%= booking.date.toISOString().split('T')[0] %></td>
+                <td><%= booking.time %></td>
+                <td><%= booking.card %></td>
+            </tr>
+            <% }); %>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,91 @@
+/* Style for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+/* Style for the left container */
+.container_left {
+    flex: 1;
+}
+
+/* Style for the right container */
+.container_right {
+    flex: 2;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the form header */
+#formH1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#formH2 {
+    color: #007bff;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Style for labels and inputs */
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+input[type="submit"],
+input[type="reset"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #0056b3;
+}
+
+/* Style for the card input */
+input[type="text"][name="card"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-image: url('images/card.png');
+    background-size: 20px;
+    background-position: 95% center;
+    background-repeat: no-repeat;
+}
+
+/* Adjust the background image position to match your card icon */
