@@ -10,7 +10,7 @@ router.get('/create', function(req, res, next) {
 
 // Show created page
 router.post('/create', function(req, res, next) {
-  booking.create(req.body)
+  Booking.create(req.body)
     .then((bookingCreated) => {
       res.render('created.ejs', { title: 'Done!' });
     })
