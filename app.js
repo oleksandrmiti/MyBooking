@@ -31,9 +31,9 @@ app.use('/booking', bookingRouter);
 const connect = async () =>{
   try {
       await mongoose.connect('mongodb+srv://admin:ghMLEUod23@booking.zvkxqxy.mongodb.net/booking?retryWrites=true&w=majority');
-      console.log("Connected to mongoDB.")
+      console.log("Connected to mongoDB.");
   } catch (error){
-      throw error
+      throw error;
   }
 };
 
