@@ -1,0 +1,143 @@
+/*
+====================================
+====================================
+CSS for INDEX.ejs
+====================================
+====================================
+*/
+
+
+/*
+===============================================
+===============================================
+            MAIN PART FOR INDEX.ejs
+===============================================
+===============================================
+*/
+
+
+/*Start of index.html page */
+
+/* Create two equal columns that sits next to each other */
+
+/*First colum*/
+
+.row-first {
+	display: flex;
+	height: 270px;
+}
+  
+.column-left1 {
+	
+	flex: 50%;
+	padding: 49px;
+	margin: 54px;
+	width: min-content;
+	text-align: center;
+}
+
+.column-right1 {
+	
+	flex: 50%;
+	padding: 56px;
+	margin: 45px;
+	width: 300px;
+	text-align: center;
+}
+
+/*Second column*/
+
+.row-second {
+	display: flex;
+	height: 639px;
+}
+  
+.column-left2 {
+	
+	flex: 50%;
+	padding: 81px;
+	margin: 131px;
+	width: 250px;
+	text-align: center;
+}
+
+.column-right2{
+    display: flex;
+    flex: 50%;
+    padding: 78px;
+    margin: 138px;
+    width: 300px;
+    align-content: flex-start;
+    justify-content: center;
+}
+	
+/*End of index.html page*/
+
+
+
+
+    
+/*Start of prices*/
+    #page-table table {
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 100%;
+        font-family: Arial, sans-serif;
+        letter-spacing: 0.15em;	
+        border-collapse: collapse;
+        width: 600px;
+        margin: 0 auto;
+        border: 1px solid #000;
+      }
+      
+    #page-table td{ 
+        border: 1px solid #000;
+        text-align: left;
+        padding: 10px;
+      }
+    #page-table th{
+        border: 0;
+        text-align: right;
+    }
+    #page-table tr:nth-child(even) { 
+        background-color: #dddddd;
+      }
+    .button-personal {
+        background-color: #04AA6D;
+        border: none;
+        color: white;
+        padding: 7px 7px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 14px;
+        border-radius: 10px;
+      }
+      #page-table tr:nth-child(even) { 
+        background-color: #dddddd;
+      }
+    /*End of pricess*/
+    
+    /*Start of reviews*/
+    div.gallery {
+        margin: 10px;
+        border: 1px solid #ccc;
+        display: inline-block;
+        width: 313px;
+      }
+      
+      div.gallery:hover {
+        border: 1px solid #777;
+      }
+      
+      div.gallery img {
+        width: 100%;
+        height: auto;
+      }
+      
+      div.desc {
+        padding: 15px;
+        text-align: center;
+      }
+    
+    /*End of reviews*/
+    

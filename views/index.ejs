@@ -1,27 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
-</head>
-<body>
-    <h1>Welcome to MyBooking</h1>
-    <p>Choose from the following options:</p>
-    <ul>
-        <li><a href="/booking/create">Create a new booking</a></li>
-        <li><a href="/booking/delete">Delete a booking</a></li>
-        <li><a href="/booking/modify">Modify a booking</a></li>
-        <li><a href="/booking/report">Report on bookings</a></li>
-        <li><a href="/report">Report on scheduled workshops</a></li>
-        <li><a href="/about">About Page</a></li>
-        <li><a href="/help">Help Page</a></li>
-    </ul>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+        <link rel="stylesheet" type="text/css" href="/stylesheets/index.css">
+        <link rel="icon" href="/favicon.png" type="image/png">
+        <meta name="author" content="Oleksandr Mitichkin">
+    </head>
+    <body>
+        <div id="page">
+            <div id="logo"><!--Logo-->
+                <center>
+                    <a  href = "/"> <img src="/logo.jpg" alt= "Our logo. :)" width="200px"></a>
+                </center>
+            </div>
+
+            <ul id="navigation"><!--Main nav buttons-->
+                <li><a href="/booking/create">Create a new booking</a></li>
+                <li><a href="/booking/delete">Delete a booking</a></li>
+                <li><a href="/booking/modify">Modify a booking</a></li>
+                <li><a href="/booking/report">Report on bookings</a></li>
+                <li><a href="/report">Report on scheduled workshops</a></li>
+                <li><a href="/about">About Page</a></li>
+                <li><a href="/help">Help Page</a></li>
+            </ul>
+            
+            <div id = "content"><!--Opening content-->
+                <div class="row-first"><!--Opening first table exercise ad-->
+                        <div class="column-left1"><!--Opening first left column-->
+                            <img src="/images/workshops/programming.jpeg" width="500px">                            
+                        </div><!--Closing first left column-->
+                        <div class="column-right1"><!--Opening first right column-->
+                            <h1>Programming Workshop</h1>
+                            <p>
+                                We are passionate about education, teaching ourselves and our clients every day to ensure we are all learning. We are always looking for ways to expand our knowledge and offer an even better experience for our clients.<br>
+                                We are authentic, we believe in building a shared trust between our clients and ourselves, based on honesty and transparency. Having conversations that are both frank and honest.<br>
+                                We are about belonging and friendship, a place where everyone knows your name, a haven where you can leave life’s stresses at the door and relax for a few hours with friends.<br>
+                                Magic is about supporting and working together.
+                            </p>
+                            <br><br><br>
+                        </div><!--Closing first right column-->
+                </div><!--Closing first table-->
+                <div class="row-second"><!--Opening second table for sauna ad-->
+                    <div class="column-left2"><!--Opening second left column-->
+                        <br><br>
+                        <h1>Massage Workshop</h1>
+                        <p>Just a few notes before you read our price list AND Before you book online (So everything is clear)
+                            <br>
+                            If you don’t know what colour service you require please DO NOT book online, please call us so we can let you know all the options available to you.
+                            <br>
+                            If you are having a colour service, we require a skin test 2 days prior to your appointment (as a new client). This also applies to clients who haven’t seen us in over 6 months.
+                            <br>
+                            Come in for a consultation if you have any questions about ANYTHING – we highly recommend a CUT + our ID CONSULT for all new clients! Please call US to book.
+                            <br><br><br>
+                            <a href="prices.html" class="button">Our prices</a>
+                        </p>
+                    </div><!--Closing second left column-->
+                    <div class="column-right2"><!--Opening second right column-->
+                        <img src="/images/workshops/massage.jpeg" width="500px" height="300px" >
+                    </div><!--Closing second right column-->
+                </div><!--Closing second table-->			
+            </div> <!--End of content-->
 
 
-<footer>
-
-</footer>
+        </div>
+        
+        <footer class="footer-bottom"><!--Start of footer-->
+			<center>
+				<div><span>© 2023 | All Rights Reserved | Made By Oleksandr Mitichkin ©</a></span></div>
+			</center>
+		</footer><!--End of footer-->
+    </body>
 </html>

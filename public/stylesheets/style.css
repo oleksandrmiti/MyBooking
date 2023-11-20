@@ -1,44 +1,93 @@
+/*
+====================================
+====================================
+CSS for things used in every file
+====================================
+====================================
+*/
+
+
+* {
+	box-sizing: border-box;
+  }
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	font-size: 75%;
+	font-family: Bookman Old Style, sans-serif;
+	letter-spacing: 0.15em;	
+	display: flex;
+  flex-direction: column;
+	min-height: 100vh;
+	
 }
 
-
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
-
-h1 {
-  color: #333;
-}
-
-p {
-  color: #666;
-}
-
+#logo {
+    display: flex;
+    background-color: #242424;
+    justify-content: center;
+	}
 ul {
-  list-style: none;
-  padding: 0;
+	width: auto;
+	padding: 15px;
+	margin: 0 auto;
+	/* border-top: 2px solid #000000;
+	border-bottom: 1px solid #000000; */
+	text-align: center;}
+#navigation li {
+	display: inline;
+	margin: 0 auto;}
+#navigation a {
+	color: #000000;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 6px 18px 5px 18px;}
+#navigation a:hover, #navigation a.on {
+	color: #cc3333;
+	background-color: #ffffff;}
+p{
+    font-size: 14px;
+}	
+h3{
+    font-size: 16px;
+    color: rgb(167, 146, 30);
+    font-family:'Times New Roman', Times, serif
 }
 
-li {
-  margin: 10px 0;
+
+#content {
+	margin: 0 auto;
 }
 
-a {
-  text-decoration: none;
-  color: #007bff;
-  font-weight: bold;
-  transition: color 0.3s;
+/*
+====================================
+====================================
+              FOOTER
+====================================
+====================================
+*/
+
+
+footer{
+	/* display: flow-root;
+	position: fixed;
+    bottom: 0;
+    width: 100%; */
+	margin-top: auto;
+  margin-bottom: 20px;  
+}
+.footer-bottom center{
+    padding: 5px;
+    font-size: 0.9375rem;
+  
 }
 
-a:hover {
-  color: #0056b3;
+.footer-bottom center span{
+    color: #656565;
 }
 
-/* Add more styles as needed */
+.footer-bottom center a{
+    text-decoration: none;
+}
 
+.footer-bottom center a:hover{
+    text-decoration: underline;
+}

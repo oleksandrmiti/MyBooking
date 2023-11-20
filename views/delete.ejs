@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home</title>
         <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+        <link rel="stylesheet" type="text/css" href="/stylesheets/index.css">
         <link rel="icon" href="/favicon.png" type="image/png">
         <meta name="author" content="Oleksandr Mitichkin">
     </head>
@@ -32,6 +33,7 @@
                     <th>Date</th>
                     <th>Time</th>
                     <th>Card Number</th>
+                    <th>Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -42,13 +44,17 @@
                     <td><%= booking.time %></td>
                     <td><%= booking.card %></td>
                     <td>
-                        <a href="/booking/modify/<%= booking._id %>">Modify</a>
+                        <!-- Delete button with a form for submitting the delete request -->
+                        <form method="POST" action="/booking/delete-booking">
+                            <input type="hidden" name="bookingId" value="<%= booking._id %>">
+                            <button type="submit">Delete</button>
+                        </form>
                     </td>
                 </tr>
                 <% }); %>
             </tbody>
         </table>
-
+        
         <footer class="footer-bottom"><!--Start of footer-->
 			<center>
 				<div><span>© 2023 | All Rights Reserved | Made By Oleksandr Mitichkin ©</a></span></div>

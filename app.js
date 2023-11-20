@@ -22,6 +22,8 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(logger('dev'));
 app.use(express.urlencoded({ extended: false }));
+app.use('/logo.jpg', express.static('public/images/logo/logo_bigger_black.jpg'));
+app.use('/favicon.png', express.static('public/images/logo/logo_white.png'));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
