@@ -5,51 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= title %></title>
     <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
-    <link rel="stylesheet" type="text/css" href="/stylesheets/booking.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/create.css">
+
 </head>
-<header>
-    
-</header>
+
 <body>
-    <div id="logo"><!--Logo-->
-        <center>
-            <a  href = "/"> <img src="/logo.jpg" alt= "Our logo. :)" width="200px"></a>
-        </center>
-    </div>
+    <header>
+        <div id="logo"><!--Logo-->
+            <center>
+                <a  href = "/"> <img src="/logo.jpg" alt= "Our logo. :)" width="200px"></a>
+            </center>
+        </div>
+    
+        <ul id="navigation"><!--Main nav buttons-->
+            <li><a href="/booking/create">Create a new booking</a></li>
+            <li><a href="/booking/delete">Delete a booking</a></li>
+            <li><a href="/booking/modify">Modify a booking</a></li>
+            <li><a href="/booking/report">Report on bookings</a></li>
+            <li><a href="/report">Report on scheduled workshops</a></li>
+            <li><a href="/about">About Page</a></li>
+            <li><a href="/help">Help Page</a></li>
+        </ul>
+    </header>
+   
+    <main>
+        <div class="booking-form">
+            <form action="/booking/create" method="post">
+                <label for="name">Please enter your name:</label>
+                <input type="text" name="name" id="name" placeholder="Name" required>
 
-    <ul id="navigation"><!--Main nav buttons-->
-        <li><a href="/booking/create">Create a new booking</a></li>
-        <li><a href="/booking/delete">Delete a booking</a></li>
-        <li><a href="/booking/modify">Modify a booking</a></li>
-        <li><a href="/booking/report">Report on bookings</a></li>
-        <li><a href="/report">Report on scheduled workshops</a></li>
-        <li><a href="/about">About Page</a></li>
-        <li><a href="/help">Help Page</a></li>
-    </ul>
-    
-    <div>
-        <form action="/booking/create" method="post">
-            <label for="name">Please enter your name:</label>
-            <input type="text" name="name" id="name" placeholder="Name" required>
-            
-            <label for="date">Date:</label>
-            <input type="date" name="date" id="date" required>
-            
-            <label for="time">Time:</label>
-            <input type="time" name="time" id="time" required>
-            
-            <label for="card">Card number:</label>
-            <input type="text" name="card" id="card" pattern="[0-9]{16}" placeholder="1234 1234 1234 1234" required>
-            
-            <div class="button-container">
-                <input type="submit" value="Submit">
-                <input type="reset" value="Reset">
-            </div>
-        </form>
-    </div>
-    
+                <label for="date">Date:</label>
+                <input type="date" name="date" id="date" required>
+
+                <label for="time">Time:</label>
+                <input type="time" name="time" id="time" required>
+
+                <label for="card">Card number:</label>
+                <input type="text" name="card" id="card" pattern="[0-9]{16}" placeholder="1234 1234 1234 1234" required>
+
+                <div class="button-container">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+            </form>
+        </div>
+    </main>
 </body>
-<footer>
 
-</footer>
+
+
+<footer class="footer-bottom"><!--Start of footer-->
+    <center>
+        <div><span>© 2023 | All Rights Reserved | Made By Oleksandr Mitichkin ©</a></span></div>
+    </center>
+</footer><!--End of footer-->
+</body>
+
 </html>

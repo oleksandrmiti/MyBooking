@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#logo {
+    text-align: center;
+}
+
+#logo img {
+    width: 200px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #555;
+}
+
+nav a:hover {
+    background-color: #777;
+}
+
+main {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #bcbcbc;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.647);
+}
+
+.booking-form {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+form {
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.button-container {
+    overflow: hidden;
+    display: flex;
+    
+}
+
+input[type="submit"],
+input[type="reset"] {
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+input[type="reset"] {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="reset"]:hover {
+    background-color: #d32f2f;
+}

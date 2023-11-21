@@ -16,10 +16,10 @@ body {
 	font-family: Bookman Old Style, sans-serif;
 	letter-spacing: 0.15em;	
 	display: flex;
-  flex-direction: column;
+    flex-direction: column;
 	min-height: 100vh;
 	margin: 0;
-  padding: 0;
+    padding: 0;
 }
 
 #logo {
@@ -30,7 +30,7 @@ body {
 
 ul {
 	width: auto;
-	padding: 15px;
+	/* padding: 15px; */
 	margin: 0 auto;
 	/* border-top: 2px solid #000000;
 	border-bottom: 1px solid #000000; */
@@ -102,3 +102,48 @@ footer{
 .footer-bottom center a:hover{
     text-decoration: underline;
 }
+#about-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#about-content {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 240px;
+    margin-top: 20px;
+    margin-left: 50px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+#about-content h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#about-content p {
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+#about-content a {
+    color: #3498db;
+    text-decoration: underline;
+}
+
+#about-content a:hover {
+    color: #2575ad;
+}
+
+#logo {
+    margin-bottom: 20px;
+}
+
+#logo img {
+    max-width: 100%;
+}
+

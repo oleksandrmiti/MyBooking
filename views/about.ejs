@@ -1,43 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<html>
-	<head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title><%= title %></title>
-        <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
-        <link rel="stylesheet" type="text/css" href="/stylesheets/index.css">
-        <link rel="icon" href="/favicon.png" type="image/png">
-        <meta name="author" content="Oleksandr Mitichkin">
-	</head>
-	
-	<body>
-		<div id="contact-page">
-			<div id="logo"><!--Logo-->
-                <center>
-                    <a  href = "/"> <img src="/logo.jpg" alt= "Our logo. :)" width="200px"></a>
-                </center>
-            </div>
-			
-			<ul id="navigation"><!--Main nav buttons-->
-                <li><a href="/booking/create">Create a new booking</a></li>
-                <li><a href="/booking/delete">Delete a booking</a></li>
-                <li><a href="/booking/modify">Modify a booking</a></li>
-                <li><a href="/booking/report">Report on bookings</a></li>
-                <li><a href="/report">Report on scheduled workshops</a></li>
-                <li><a href="/about">About Page</a></li>
-                <li><a href="/help">Help Page</a></li>
-            </ul>
-	
-			<div id = "contact-content"><!--Start of Content section-->
-				<h1>Just small history about us!;</h1>
-			</div><!--End of Content section-->
-		</div><!--End of Contact Page-->
-        
-		<footer class="footer-bottom"><!--Start of footer-->
-			<center>
-				<div><span>© 2023 | All Rights Reserved | Made By Oleksandr Mitichkin ©</a></span></div>
-			</center>
-		</footer><!--End of footer-->
-	</body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | <%= title %></title>
+    <!-- <link rel="stylesheet" type="text/css" href="/stylesheets/style.css"> -->
+    <link rel="stylesheet" type="text/css" href="/stylesheets/about.css">
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <meta name="author" content="Oleksandr Mitichkin">
+</head>
+
+<body>
+    <!--Start of About page-->
+    <div id="contact-page">
+        <div id="logo">
+            <!--Logo-->
+            <center>
+                <a href="/">
+                    <img src="/logo.jpg" alt="Our logo. :)" width="200px">
+                </a>
+            </center>
+        </div>
+
+        <ul id="navigation">
+            <!--Main nav buttons-->
+            <li><a href="/booking/create">Create a new booking</a></li>
+            <li><a href="/booking/delete">Delete a booking</a></li>
+            <li><a href="/booking/modify">Modify a booking</a></li>
+            <li><a href="/booking/report">Report on bookings</a></li>
+            <li><a href="/report">Report on scheduled workshops</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/help">Help Page</a></li>
+        </ul>
+
+        <!--Start of Content section-->
+        <div id="about-content">
+            
+            <h1>About Us</h1>
+            <p>Welcome to our Workshop Booking System!</p>
+            <p>We are dedicated to providing a seamless experience for booking workshops and enhancing your learning journey. Our platform allows you to easily create, modify, and delete your workshop bookings.</p>
+            <p>Our team is passionate about fostering a community of learners and facilitating access to valuable knowledge through engaging workshops. Whether you are a student, professional, or enthusiast, our platform is designed to meet your workshop booking needs.</p>
+            <p>Thank you for choosing us for your workshop booking experience. If you have any questions or need assistance, feel free to visit our Help Page or contact us.</p>
+        </div>
+        <!--End of Content section-->
+    </div>
+    <!--End of About Page-->
+
+    <footer class="footer-bottom">
+        <!--Start of footer-->
+        <center>
+            <div><span>© 2023 | All Rights Reserved | Made By Oleksandr Mitichkin ©</span></div>
+        </center>
+    </footer>
+    <!--End of footer-->
+</body>
+
 </html>

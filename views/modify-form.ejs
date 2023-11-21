@@ -9,9 +9,18 @@
         <!-- Modify form fields here, pre-filled with existing data -->
         <label for="name">Name:</label>
         <input type="text" name="name" value="<%= booking.name %>" required>
+        
+        <label for="date">Date:</label>
+        <input type="date" name="date" value="<%= booking.date %>" required>
+        
+        <label for="time">Time:</label>
+        <input type="time" name="time" value="<%= booking.time %>" required>
+        
+        <label for="card">Date:</label>
+        <input type="text" name="card" pattern="[0-9]{16}" placeholder="1234 1234 1234 1234" value="<%= booking.card %>" required>
 
-        <!-- Add other fields (date, time, card) similarly -->
-
+        
+      
         <button type="submit">Update</button>
     </form>
 </body>

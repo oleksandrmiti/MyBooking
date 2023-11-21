@@ -4,7 +4,7 @@ const Booking = require('../model/booking.js')
 
 // Show booking page
 router.get('/create', function(req, res, next) {
-  res.render('create.ejs', { title: 'Make your booking.' });
+  res.render('create.ejs', { title: 'Make your booking' });
 });
 
 
@@ -24,7 +24,7 @@ router.post('/create', function(req, res, next) {
 router.get('/modify', async (req, res) => {
     try {
         const bookings = await Booking.find({});
-        res.render('modify.ejs', { bookings, title: 'All Bookings.' });
+        res.render('modify.ejs', { bookings, title: 'All Bookings' });
     } catch (err) {
         console.error(err);
         res.status(500).send('An error occurred');
