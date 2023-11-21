@@ -1,27 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Add your head content -->
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title><%= title %> </title>
+        <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+        <link rel="stylesheet" type="text/css" href="/stylesheets/create.css">
+        <link rel="icon" href="/favicon.png" type="image/png">
+        <meta name="author" content="Oleksandr Mitichkin">
+    </head>
 <body>
-    <h1>Modify Booking</h1>
-    <form method="POST" action="/booking/modify/<%= booking._id %>">
-        <!-- Modify form fields here, pre-filled with existing data -->
-        <label for="name">Name:</label>
-        <input type="text" name="name" value="<%= booking.name %>" required>
-        
-        <label for="date">Date:</label>
-        <input type="date" name="date" value="<%= booking.date %>" required>
-        
-        <label for="time">Time:</label>
-        <input type="time" name="time" value="<%= booking.time %>" required>
-        
-        <label for="card">Date:</label>
-        <input type="text" name="card" pattern="[0-9]{16}" placeholder="1234 1234 1234 1234" value="<%= booking.card %>" required>
+    <div id="logo"><!--Logo-->
+        <center>
+            <a  href = "/"> <img src="/logo.jpg" alt= "Our logo. :)" width="200px"></a>
+        </center>
+    </div>
 
+    <ul id="navigation"><!--Main nav buttons-->
+        <li><a href="/booking/create">Create a new booking</a></li>
+        <li><a href="/booking/delete">Delete a booking</a></li>
+        <li><a href="/booking/modify">Modify a booking</a></li>
+        <li><a href="/booking/report">Report on bookings</a></li>
+        <li><a href="/report">Report on scheduled workshops</a></li>
+        <li><a href="/about">About Page</a></li>
+        <li><a href="/help">Help Page</a></li>
+    </ul>
+    
+    <main>
+        <div class="booking-form">
+            <h1>Modify Booking:</h1>
+            <form method="POST" action="/booking/modify/<%= booking._id %>">
+                <!-- Modify form fields here, pre-filled with existing data -->
+                <label for="name">Change your name:</label>
+                <input type="text" name="name" value="<%= booking.name %>" required>
+                
+                <label for="date">Date:</label>
+                <input type="date" name="date" value="<%= booking.date %>" required>
+                
+                <label for="time">Time:</label>
+                <input type="time" name="time" value="<%= booking.time %>" required>
+                
+                <label for="card">Card number:</label>
+                <input type="text" name="card" pattern="[0-9]{16}" placeholder="1234 1234 1234 1234" value="<%= booking.card %>" required>
         
-      
-        <button type="submit">Update</button>
-    </form>
+                
+                <div class="button-container">
+                    <!-- <button type="submit">Update</button> -->
+                    <input type="submit" value="Submit">
+                </div>
+                
+            </form>
+        </div>
+    </main>
+    
+    
+    <footer class="footer-bottom"><!--Start of footer-->
+        <center>
+            <div><span>© 2023 | All Rights Reserved | Made By Oleksandr Mitichkin ©</a></span></div>
+        </center>
+    </footer><!--End of footer-->
 </body>
 </html>
