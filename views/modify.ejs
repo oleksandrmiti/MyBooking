@@ -20,13 +20,16 @@
             <li><a href="/booking/create">Create a new booking</a></li>
             <li><a href="/booking/delete">Delete a booking</a></li>
             <li><a href="/booking/modify">Modify a booking</a></li>
-            <li><a href="/booking/report">Report on bookings</a></li>
-            <li><a href="/report">Report on scheduled workshops</a></li>
             <li><a href="/about">About Page</a></li>
             <li><a href="/help">Help Page</a></li>
         </ul>
         <h1>All Bookings</h1>
-        <table>
+        <form id="searchForm">
+            <label for="searchTerm">Search:</label>
+            <input type="text" id="searchTerm" placeholder="Enter a name...">
+        </form>
+
+        <table id="bookingsTable">
             <thead>
                 <tr>
                     <th>Name</th>
@@ -38,7 +41,7 @@
             </thead>
             <tbody>
                 <% bookings.forEach(function(booking) { %>
-                <tr>
+                <tr id="<%= booking._id %>">
                     <td><%= booking.name %></td>
                     <td><%= booking.date.toISOString().split('T')[0] %></td>
                     <td><%= booking.time %></td>
@@ -50,7 +53,21 @@
                 <% }); %>
             </tbody>
         </table>
-
+        <script>
+            function searchBookings() {
+                const searchTerm = document.getElementById('searchTerm').value.toLowerCase();
+                const tableRows = document.getElementsByTagName('tr');
+        
+                for (let i = 1; i < tableRows.length; i++) {
+                    const rowText = tableRows[i].innerText.toLowerCase();
+        
+                    // Toggle row visibility based on search term
+                    tableRows[i].style.display = rowText.includes(searchTerm) ? 'table-row' : 'none';
+                }
+            }
+    
+            document.getElementById('searchTerm').addEventListener('input', searchBookings);
+        </script>
         <footer class="footer-bottom"><!--Start of footer-->
 			<center>
 				<div><span>© 2023 | All Rights Reserved | Made By Oleksandr Mitichkin ©</a></span></div>

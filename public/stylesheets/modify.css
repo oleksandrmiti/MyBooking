@@ -15,8 +15,13 @@ thead {
     color: white;
 }
 
-th, td {
-    padding: 12px;
+th{
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+td {
+    padding: 18px;
     text-align: left;
     border-bottom: 1px solid #ddd;
 }
@@ -35,3 +40,14 @@ a:hover {
 }
 
 
+#searchForm {
+    margin: 20px auto;
+    text-align: center;
+}
+
+#searchTerm {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
