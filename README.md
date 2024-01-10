@@ -12,6 +12,6 @@ You can check it here: https://booking-workshop-a6d38082dc7d.herokuapp.com/
 • Create new booking;<br>
 • Delete booking;<br>
 • Modify booking;<br>
-• Search booking
+• Search booking;
 
 
