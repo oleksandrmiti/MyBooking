@@ -4,7 +4,9 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var mongoose = require('mongoose');
+require('dotenv').config();
 
+const mongodbURL = process.env.MONGO;
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var bookingRouter = require('./routes/book');
@@ -32,7 +34,8 @@ app.use('/booking', bookingRouter);
 // Conenct to mongodb
 const connect = async () =>{
   try {
-      await mongoose.connect('mongodb+srv://admin:ghMLEUod23@booking.zvkxqxy.mongodb.net/booking?retryWrites=true&w=majority');
+      
+      await mongoose.connect(mongodbURL);
       console.log("Connected to mongoDB.");
   } catch (error){
       throw error;
